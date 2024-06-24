@@ -1,0 +1,50 @@
+---
+title: "Prerequisites"
+chapter: true
+weight: 2 
+---
+# Prerequisites 
+
+To run this workshop successfully, we will need to run through a few steps to properly setup and configure the environment. These steps include provisioning below resources using Cloudformation templates
+
+ 1. Create a AWS IAM group with relevant policy.
+ 2. Provision following resources 
+    * RDS Postgres instance
+    * DMS instance
+    * EC2 instance with Baffle software
+    * AWS Secret Manger
+    * AWS KMS
+    * AWS S3 
+
+
+Prerequisites to run Cloudformation are:
+
+1.  AWS Console access to an AWS environment with the privileges to deploy Cloudformation, AWS RDS, AWS DMS, and an EC2 instance.
+
+2. If you are joining this workshop Via AWS event.  Please join the event at [at an AWS Event](https://catalog.workshops.aws/rdspg/en-US/1-prerequisites/task1) and rerutn here once you join the event.
+
+Your workshop facilitator will provide a URL to join the event and optionally an access code, if its not part of the provided URL. The URL/access code grants you permission to use a dedicated AWS account for the purposes of this workshop.
+
+Use the provided URL or go to  [https://catalog.us-east-1.prod.workshops.aws/join](https://catalog.us-east-1.prod.workshops.aws/join)
+
+![](https://static.us-east-1.prod.workshops.aws/public/abfdf667-6d45-4447-b440-ca8078fd1e7c/static/1_prereq/lab2_ws1.png)
+
+To login, choose the  **Email One-time Password (OTP)**  option and enter your email address.  _Please use your business email address._
+
+![](https://static.us-east-1.prod.workshops.aws/public/abfdf667-6d45-4447-b440-ca8078fd1e7c/static/1_prereq/lab2_ws2.png)
+
+You will receive a 6-digit one-time password in your email. Enter that into the next dialog.
+
+![](https://static.us-east-1.prod.workshops.aws/public/abfdf667-6d45-4447-b440-ca8078fd1e7c/static/1_prereq/lab2_ws3.png)
+
+After signing in, if prompted, enter the  **Event access code**  provided and select  **Next**.![](https://static.us-east-1.prod.workshops.aws/public/abfdf667-6d45-4447-b440-ca8078fd1e7c/static/1_prereq/lab2_ws4.png)
+
+Next, Review the "Terms and Conditions" and select the checkmark to accept. Then click  **Join event**.![](https://static.us-east-1.prod.workshops.aws/public/abfdf667-6d45-4447-b440-ca8078fd1e7c/static/1_prereq/lab2_ws5.png)
+
+Choose **Open AWS console** on the left navigation bar to log into the AWS Management Console.![](https://static.us-east-1.prod.workshops.aws/public/abfdf667-6d45-4447-b440-ca8078fd1e7c/static/1_prereq/lab2_ws6.png)
+
+3. If you are using a Managed AWS account please make sure to have privilleges to access and/or create above mentioned AWS resources.
+
+{{% notice warning %}}
+Provisioning this workshop environment in your AWS account will create resources and **there will be cost associated with them**. The cleanup section provides a guide to remove them, preventing further charges.
+{{% /notice %}}
