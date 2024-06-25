@@ -7,14 +7,7 @@ weight: 4
 # Lab 1 - MASKING FOR DEV/TEST ENVIRONMENTS
 
 ## Scenario  
-One of the first steps of the modernization process is to deploy a test/dev  
-environment on AWS for the application team to develop the updated  
-version of the application and test those updates in the new cloud  
-infrastructure. Since it’s a test/dev environment, the database must not  
-contain any sensitive values So, you decide to use Baffle’s static masking  
-feature to anonymize sensitive data as you copy the data from production  
-databases into the new PostgreSQL database so that you can do both in one  
-workflow.  
+To begin the modernization process, the first step is to set up a test/development environment on AWS. This environment will allow the application team to develop and test the updated version of the application within the new cloud infrastructure. Given that it is a test/development environment, it is crucial that the database does not contain any sensitive data. To address this, Baffle’s static masking feature can be utilized to anonymize sensitive information as it is copied from the production databases to the new PostgreSQL database. This approach ensures data privacy while streamlining the workflow.
 
 ## Goals for this lab  
 After completing this lab, you will have a PostgreSQL database with a  

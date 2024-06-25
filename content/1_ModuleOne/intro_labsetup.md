@@ -5,11 +5,11 @@ weight: 3
 ---
 # Infrastructure Setup
 
-In order to continue with infrastructure set up, please make sure prerequisites mentioned in previous sessions are completed or verified.
+In order to continue with infrastructure set up, please make sure the  prerequisites mentioned in previous sessions are completed or verified.
 
 ## AWS IAM Setup
 
-Prior to creating infrastructure, an IAM group is set up with a policy that has relevant permissions for the infrastructure creation and usage.
+Prior to creating infrastructure, an IAM group is set up with a policy that has the relevant permissions for infrastructure creation and usage.
     
 
 1.  Download the “create_group_role_template.yaml” file from this location: [baffle-public/market-place/cloudformation-template/lower-environment/create_group_policy at master · baffle/baffle-public (github.com)](https://github.com/baffle/baffle-public/tree/master/market-place/cloudformation-template/lower-environment/create_group_policy)
@@ -20,7 +20,7 @@ Prior to creating infrastructure, an IAM group is set up with a policy that has 
 
 ![CFTcreatestack-1](../images/CFT_createstack-1.png)
     
-4.  Select Choose and existing template then Upload a template file then Choose file and navigate to the file. Select the file and click Open. Click Next
+4.  Select Choose an existing template, then Upload a template file, then Choose file and navigate to the file. Select the file and click Open. Click Next
 
 ![CFTcreatestack-2](../images/CFT-createstack-2.png)
     
@@ -32,7 +32,7 @@ Prior to creating infrastructure, an IAM group is set up with a policy that has 
     
 
 
-Now we will add the user that will be creating the infrastructure to the IAM group Created in prior steps.
+Now we will add the user that will be creating the infrastructure to the IAM group created in prior steps.
     
 
 1.  As an AWS Admin, log in to the AWS console and go to the IAM service
@@ -61,11 +61,11 @@ Now we will add the user that will be creating the infrastructure to the IAM gro
 
 ![CFTcreatestack](../images/CFT_createstack-1.png)
     
-4.  Select Choose an existing template then Upload a template file then Choose file and navigate to the file. Select the file and click Open. Click Next
+4.  Select Choose an existing template, then Upload a template file, then Choose file and navigate to the file. Select the file and click Open. Click Next
 
 ![CFTcreatestack2](../images/CFT-createstack-2.png)
     
-5.  In Stack Name, enter a name for the stack, we will refer to it as <baffle-stack-name>
+5.  In Stack Name, enter a name for the stack, we will refer to it as baffle-stack-name
     
 6.  In Parameters
     

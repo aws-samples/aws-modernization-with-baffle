@@ -12,7 +12,7 @@ Once DMS senses new data in production, it copies that data over to the lower en
 
   
 
-1.  Back in the PDADMIN Object Explorer, Under dms_static-mask->direct@baffle->Databases, right click dms_target_db and then Query Tool. A new SQL command pane opens.
+1.  Back in the PGADMIN Object Explorer, Under dms_static-mask->direct@baffle->Databases, right click dms_target_db and then Query Tool. A new SQL command pane opens.
     
 2.  Use the following command to select all from the table “customers”.
     
@@ -26,14 +26,14 @@ Once DMS senses new data in production, it copies that data over to the lower en
     Click the “play” button to run the query.
 
   
-Observe that the ssn and ccn of each user is encrypted. Because the encryption is format preserving, it may not not normally be obvious, but since the clear numbers were all easy to see (ie 111-11-1111), it is now easy to see the encrypted values are very different.
+Observe that the ssn and ccn of each user is encrypted. Because the encryption is format preserving, it may not not normally be obvious, but since the original clear numbers were all easy to see (ie 111-11-1111), it is now easy to see the encrypted values are very different.
 
 ### Verify Continuous Updates
 This is just to show that any future production changes are captured by DMS and updated but de-identified in the lower environment.  These ongoing updates are an advantage over many other approaches to static masking that have to be done periodically and can be disruptive.
 
 1. Go back to the Query tool for the production database.  Along the top see the tab that says “dms_source_db/baffle@direct@baffle*”
 
-2. Delete a the entry for Charley and enter a new row for Horace by entering this command:
+2. Delete the entry for Charley and enter a new row for Horace by entering this command:
 
 
     delete from customers where first_name = 'Charley';

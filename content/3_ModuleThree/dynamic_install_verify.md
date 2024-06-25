@@ -15,7 +15,7 @@ Check if below components, RBAC and Encryption policies are setup:
 
 -   Key Management -> Key Encryption Keys -> alias/<stack_name>-baffle-shield-key. The KEK and related DEK are specified here.
 
--   Database Proxy -> Clusters -> db-proxy-postgres. This is where Baffle Shield is configured and programmed.
+-   Database Proxies -> Clusters -> db-proxy-postgres. This is where Baffle Shield is configured and programmed.
     
 -   Database Proxies -> Databases -> PostgreSQL This is the database that will contain the de-identified data (sales_dev database, public schema, customers table, and ssn column)
     

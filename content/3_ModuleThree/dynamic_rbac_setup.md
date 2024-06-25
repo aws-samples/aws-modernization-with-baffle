@@ -6,7 +6,8 @@ weight: 1
 # Lab 2 - No-code Application Encryption and Dynamic Masking
 
 ## Setup Rules and Policies (For Reference)
-As with the previous lab, the CloudFormation template you used to perform 
+
+**NOTE**: As with the previous lab, the CloudFormation template you used to perform 
 setup at the beginning of the workshop has used Baffle Manager’s REST APIs 
 to prepopulate your deployment with the RBAC rules and encryption and 
 dynamic masking policies needed to successfully complete this lab, so you 
@@ -16,7 +17,7 @@ rules policies can be created if you were to do so manually through the user
 interface. They walkthrough how to provision users and map them to 
 
 
-This LAB will provision some Database users (harry,sally,ron) and respective grants along with the infrastructure. The Baffle policies have already been created by CloudFormation, so this section may be skipped for this lab.  However, the process for creating them is outlined here for learning and/or future reference. 
+This lab will provision some database users (harry, sally, ron) and respective grants along with the infrastructure. The Baffle policies have already been created by CloudFormation, so this section may be skipped for this lab.  However, the process for creating them is outlined here for learning and/or future reference. 
 
 
 | DB users | Provisioned/LAB | 
@@ -43,11 +44,11 @@ This LAB will provision some Database users (harry,sally,ron) and respective gra
 7.  Create these three users with these SQL commands:
 
 		
-		create user henry password 'harry';
+		create user harry password 'harry';
 
-		create user sophia password 'sally';
+		create user sally password 'sally';
 
-		create user randy with password 'ron';
+		create user ron with password 'ron';
 	
 8.  Grant those users access to the table “customers” using these SQL commands:
 
@@ -76,15 +77,15 @@ Please navigate to Baffle Manger URL and login.
 2.  In the left navigation pane, under Database Proxies, click **User Groups**
 3.  In the top right, click **Create +**. A panel will slide in from the right.
 5.  In _User Group Name_, enter “human_resources”
-6.  In _Users_, type in “henry”
+6.  In _Users_, type in “harry”
 7.  In the bottom right, click **Create**. The User Groups list page will appear.
 8.  In the top right, click **Create +**. A panel will slide in from the right.
 9.  In _User Group Name_, enter “support”
-10.  In _Users_, type in “sophia”
+10.  In _Users_, type in “sally”
 11.  In the bottom right, click **Create**. The User Groups list page will appear.
 12.  In the top right, click **Create +**. A panel will slide in from the right.
 13.  In _User Group Name_, enter “remote”
-14.  In _Users_, type in “randy”
+14.  In _Users_, type in “ron”
 15.  In the bottom right, click **Create**. The User Groups list page will appear with all three groups listed:
 
 
@@ -107,7 +108,7 @@ Please navigate to Baffle Manger URL and login.
 13. In Datatype enter the data type.  In this example, enter “varchar(50)”
 14. Click the box that says Add to selected columns and note the definition of this column appears in the right pane.
 15. In the bottom right, click Create. You will be returned to the Data Sources list
-16. Repeat steps b to o exactly with two exceptions. In step c, name this data source “ssn” and in step l, name the column “ssn”
+16. Repeat these steps with two exceptions name this data source “ssn”, name the column “ssn”
 17. At this point, “ccn” and “ssn” datasources should be defined:
 
 
@@ -126,7 +127,7 @@ Please navigate to Baffle Manger URL and login.
 10.  To the right of the KEK name is a drop down to select the corresponding DEK.  For this example, click “baffle-dek-641”
 11.  In the bottom right, click **Next** to go to the Access Control page
 12.  Do not select anything on this page because access controls will be set-up later in the dynamic data masking part of this lab. Rather, in the bottom right, click **Create.** This data protection policy will be created.
-13.  Repeat steps b through l exactly with the three exceptions. In step c, the _Policy Name_ is “ssn-fpe-decimal”.  In step d, under _Select Data source_ check the little box next to “ssn”, and in step g, under _FPE Format_ drop down, select **fpe-decimal**. This encrypts only numbers from the plain text and ignores dashes and spaces.
+13.  Repeat these steps with the three exceptions  the _Policy Name_ is “ssn-fpe-decimal”, under _Select Data source_ check the little box next to “ssn”, under _FPE Format_ drop down, select **fpe-decimal**. This encrypts only numbers from the plain text and ignores dashes and spaces.
 14.  At this point, “ccn-fpe-cc” and “ssn-fpe-decimal” data protection policies should be defined:
 
 **Deploy the Data Protection Policies to Shield**

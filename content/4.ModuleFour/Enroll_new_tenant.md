@@ -6,7 +6,7 @@ weight: 2
 
 ##  Enroll new tenants and assign keys (For Reference)
 
-As with the previous lab(s), the CloudFormation template you used to perform
+**NOTE**: As with the previous lab(s), the CloudFormation template you used to perform
 setup at the beginning of the workshop has used Baffle Manager’s REST APIs
 to prepopulate your deployment with the Tenant creation and row level encryption
 policies needed to successfully complete this lab, so you
@@ -16,7 +16,7 @@ rules policies can be created if you were to do so manually through the user
 interface. They walkthrough how to provision new tenants and assign keys along with setting up encryption policies.
 
 
-In this LAB below Tenants and Keys are prebuilt and provisioned with cloudformation scripts for demonstration purposes.  Two set of extra Keys are to be associated with new Tenants. 
+In this lab the below Tenants and Keys are prebuilt and provisioned with cloudformation scripts for demonstration purposes.  Two set of extra Keys are to be associated with new Tenants. 
 |Tenant ID| Identifier| key |
 |--|--|--|
 | Rle-Tenant-1 | T-1001 | alias/<cloudformation stack name>-baffle-shield-key-2|
@@ -24,7 +24,7 @@ In this LAB below Tenants and Keys are prebuilt and provisioned with cloudformat
 | | | alias/<cloudformation stack name>-baffle-shield-key-4|
 | | | alias/<cloudformation stack name>-baffle-shield-key-5|
 
-Following steps will outline how new tenants can be enrolled and how to assign keys to new tenants if you wish to create a new tenant and test it out after going through the lab.  In this lab environment we do provide two extra Keys(KEK) to use for testing but we do not provide facility to generate new Keys(KEK).
+The following steps will outline how new tenants can be enrolled and how to assign keys to new tenants if you wish to create a new tenant and test it out after going through the lab.  In this lab environment we do provide two extra Keys(KEK) to use for testing but we do not provide facility to generate new Keys(KEK).
 
 
 Navigate to  Baffle Manager URL  and login.

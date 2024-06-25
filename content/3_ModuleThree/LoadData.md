@@ -14,7 +14,7 @@ Using pgAdmin, you will connect to the database through Baffle Shield as the bus
 
    ![Capture-PGAdmin](../3_ModuleThree/images/PG-Admin-Output.png)
 
-2.  In the new tab,log into pgAdmin using the same credentials you created above (same as Baffle Manager credentials)
+2.  In the new tab, log into pgAdmin using the same credentials you created above (same as Baffle Manager credentials)
 
 3.  On the left navigation pane called Object Explorer, there will be a server group "dynamic-mask". Click on the chevron by it to show the different connections.  
 

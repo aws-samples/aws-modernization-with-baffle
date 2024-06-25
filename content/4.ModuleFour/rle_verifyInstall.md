@@ -17,11 +17,11 @@ Check if below components, tenants and Encryption policies are setup:
     
 -   Database Proxies -> Databases -> PostgreSQL This is the database that will contain the protected data
     
--   Database Proxies -> Data Protection ->rle-ssn-ccn-dpp. This is the policy for encrypting ssn and ccn using traditional AES deterministic encryption.
+-   Database Proxies -> Data Protection -> rle-ssn-ccn-dpp. This is the policy for encrypting ssn and ccn using traditional AES deterministic encryption.
     
 -   Database Proxies -> Data Sources-> ccn_rle_ds and ssn_rle_ds. This is the location of the social security numbers (ssn) and credit card numbers (ccn) to be protected. This includes the database, schema, table, column, and datatype of each.
     
--   Database Proxy -> Clusters -> proxy-rle. This is where Baffle Shield is configured and programmed.
+-   Database Proxies -> Clusters -> proxy-rle. This is where Baffle Shield is configured and programmed.
 
 ![Capture-BMBreakdown](../images/image4_BM_Breakdown.png)
 Figure 3. Baffle Manager Left Navigation

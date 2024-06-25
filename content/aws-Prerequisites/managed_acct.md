@@ -5,10 +5,10 @@ weight: 3
 ---
 # Using your own AWS account
 
-To run this workshop successfully, we will need to run through a few steps to properly set up and configure the environment. These steps include provisioning below resources using Cloudformation templates
+To run this workshop successfully, we will need to run through a few steps to properly set up and configure the environment. These steps include provisioning the following resources using Cloudformation templates
 
- 1. Create an AWS IAM group with relevant policy.
- 2. Provision following resources 
+ 1. Create an AWS IAM group with relevant policies.
+ 2. Provision the following resources 
     * RDS Postgres instance
     * DMS instance
     * EC2 instance with Baffle software

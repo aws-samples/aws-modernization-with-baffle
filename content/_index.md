@@ -9,7 +9,7 @@ weight: 1
 
 ## Welcome
 
-Welcome to Baffle's hands-on workshop for enabling enterprise grade security for PostgreSQL. In this workshop, you will learn now to use Baffle to secure PostgreSQL with features and technical controls that you would typically need to meet privacy and security requirements in a modernization journey from legacy databases to PostgreSQL
+Welcome to Baffle's hands-on workshop for enabling enterprise grade security for PostgreSQL. In this workshop, you will learn how to use Baffle to secure PostgreSQL with features and technical controls that you would typically need to meet privacy and security requirements in a modernization journey from legacy databases to PostgreSQL
 
 ## Workshop Goals
 

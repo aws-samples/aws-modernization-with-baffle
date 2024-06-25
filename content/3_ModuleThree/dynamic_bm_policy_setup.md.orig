@@ -32,7 +32,7 @@ In this lab, the Data sources will be defined. The sample fields like CCN and SS
 13. In Datatype enter the data type.  In this example, enter “varchar(50)”
 14. Click the box that says Add to selected columns and note the definition of this column appears in the right pane.
 15. In the bottom right, click Create. You will be returned to the Data Sources list
-16. Repeat steps b to o exactly with two exceptions. In step c, name this data source “ssn” and in step l, name the column “ssn”
+16. Repeat steps 2 to 16 exactly with two exceptions. In step 3, name this data source “ssn” and in step 12, name the column “ssn”
 17. At this point, “ccn” and “ssn” datasources should be defined:
 
 

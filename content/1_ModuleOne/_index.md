@@ -8,7 +8,7 @@ weight: 2
 
 ## Scenario for this workshop
 Your company has just embarked on a transition to use more cloud-based infrastructure and database services to increase your company’s infrastructure flexibility while reducing system management costs.
-You are one of the key technical leads in the virtual team that’s implementing this transition. You and your team have identified a significant cost savings opportunity by switching to use AWS RDS or Aurora Postgres from costlier legacy database vendors for your modernized applications. Despite the obvious cost savings, however, your company’s Infosec/Risk/Compliance would not sign off on moving the data into AWS Postgres unless an equivalent data privacy and security posture can be achieved on the PostgreSQL as the legacy databases.
+You are one of the key technical leads in the virtual team that’s implementing this transition. You and your team have identified a significant cost savings opportunity by switching to use AWS RDS or Aurora Postgres from costlier legacy database vendors for your modernized applications. Despite the obvious cost savings, your company’s Infosec/Risk/Compliance would not sign off on moving the data into AWS Postgres unless an equivalent data privacy and security posture can be achieved in AWS Postgres as the current legacy databases.
 
 
 ## Learning Objectives <!-- MODIFY THIS SUBHEADING -->
